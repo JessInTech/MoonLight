@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Light Parallax Effects</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section>
+        <img src="images/bg.jpg" id="bg">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountain.png" id="mountain">
+        <img src="images/road.png" id="road">
+        <h2 id="text">Moon Light</h2>
+    
+     <script type="text/javascript">
+        let bg= document.getElementById("bg");
+        let moon= document.getElementById("moon");
+        let mountain= document.getElementById("mountain");
+        let road= document.getElementById("road");
+        let text= document.getElementById("text");
+
+        window.addEventListener('scroll', function() {
+        var value = window.scrollY
+
+        bg.style.top = value * 0.5 + 'px';
+        moon.style.left = -value * 0.5 + 'px';
+        mountain.style.top = -value * 0.15 + 'px';
+        road.style.top = value * 0.15 + 'px';
+        text.style.top = value * 1 + 'px';
+        })
+
+     </script>
+     </section>
+
+     <div>
+         <h2>Lets talk about traveling</h2>
+         <p>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+             Nihil odit a aspernatur aliquam harum similique nostrum. 
+             Repellendus fugit saepe nulla recusandae sint sunt laboriosam, 
+             dolorem cum eligendi libero sed sit?
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+             Nihil odit a aspernatur aliquam harum similique nostrum. 
+             Repellendus fugit saepe nulla recusandae sint sunt laboriosam, 
+             dolorem cum eligendi libero sed sit?
+             <br><br>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+             Nihil odit a aspernatur aliquam harum similique nostrum. 
+             Repellendus fugit saepe nulla recusandae sint sunt laboriosam, 
+             dolorem cum eligendi libero sed sit?
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+             Nihil odit a aspernatur aliquam harum similique nostrum. 
+             Repellendus fugit saepe nulla recusandae sint sunt laboriosam, 
+             dolorem cum eligendi libero sed sit?
+             <br><br>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+             Nihil odit a aspernatur aliquam harum similique nostrum. 
+             Repellendus fugit saepe nulla recusandae sint sunt laboriosam, 
+             dolorem cum eligendi libero sed sit?
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+             Nihil odit a aspernatur aliquam harum similique nostrum. 
+             Repellendus fugit saepe nulla recusandae sint sunt laboriosam, 
+             dolorem cum eligendi libero sed sit?
+         </p>
+
+        
+
+     </div>
+
+     <div class="footer">
+        <footer>
+            Created by JR 
+        </footer>
+     </div>
+     
+    
+</body>
+</html>
